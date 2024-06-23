@@ -8,7 +8,6 @@ export const TextGenerateEffect = ({ words, className }: { words: string; classN
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
   useEffect(() => {
-    console.log(wordsArray);
     animate(
       "span",
       {

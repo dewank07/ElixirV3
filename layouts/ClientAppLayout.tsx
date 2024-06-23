@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { Provider } from "react-redux";
 import appStore from "@/store/store";
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import { navItems } from "@/data";
 
 function BackDrop() {
   return (
@@ -31,6 +33,7 @@ export default function ClientAppLayout({
 }>) {
   return (
     <Provider store={appStore}>
+      <FloatingNav navItems={navItems} />
       <main className='relative  bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'>
         <div className='max-w-7xl w-full'>
           {children}

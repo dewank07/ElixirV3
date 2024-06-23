@@ -1,9 +1,6 @@
 "use client";
-
-import { AnimatedShinyTextDemo } from "@/components/AnimatedShinyBtn";
 import EventsCard from "@/components/EventsCard";
 import PageHeading from "@/components/PageHeading";
-import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 import useEventApi from "@/hooks/useEventApi";
 import { useSelector } from "react-redux";
 type Event = {
@@ -16,7 +13,7 @@ type Event = {
   form_link: string;
 };
 
-const page = () => {
+const Page = () => {
   const events = useSelector((store: any) => store?.event?.events);
   useEventApi();
 
@@ -44,4 +41,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
