@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
 
       <div className='flex flex-col items-center'>
-        <h1 className='heading lg:max-w-[45vw]'>
+        <h1 className='heading lg:max-w-[45vw] text-lg'>
           Ready to take <span className='text-purple'>your</span> coding journey to the next level?
         </h1>
         <p className='text-white-200 md:mt-10 my-5 text-center'>
@@ -25,7 +25,7 @@ const Footer = () => {
       <div className='flex mt-16 md:flex-row flex-col justify-between items-center'>
         <p className='md:text-sm text-xs md:font-normal font-light'>Copyright © 2024 GeeksforGeeks ABESEC</p>
 
-        <div className='flex items-center md:gap-3 gap-6'>
+        <div className='flex items-center md:gap-3 gap-6 mt-4 md:mt-0'>
           {socialMedia.map((info) => (
             <div
               key={info.id}

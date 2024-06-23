@@ -35,7 +35,7 @@ export default function ClientAppLayout({
     <Provider store={appStore}>
       <FloatingNav navItems={navItems} />
       <main className='relative  bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'>
-        <div className='max-w-7xl w-full'>
+        <div className='max-w-7xl w-full mt-10'>
           {children}
           <Footer />
           <BackDrop />

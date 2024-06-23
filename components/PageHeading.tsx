@@ -6,7 +6,7 @@ const PageHeading = ({ smallHeading, longHeading }: { smallHeading: string; long
   return (
     <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
       <AnimatedShinyTextDemo text={smallHeading} />
-      <TextGenerateEffect words={longHeading} className='text-center text-[40px] md:text-5xl lg:text-2xl' />
+      <TextGenerateEffect words={longHeading} className='text-center text-[20px] md:text-2xl ' />
     </div>
   );
 };
