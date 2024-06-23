@@ -1,1 +1,41 @@
 export const EVENT_API = "https://elixir-backendv2.vercel.app/events/?format=json";
+export const NotesData = [
+  {
+    id: "0",
+    title: "1st Year",
+    text: "Even though it's 11th and 12th all over again, we've got you covered with first-year essentials+ C (iykyk)",
+    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    iconUrl: "/sticky-notes.png",
+    imageUrl: "/1.png",
+    url: "https://drive.google.com/drive/folders/1TTjSSShjK5nrUURnSIVOK1wnO-CBCp7R",
+  },
+  {
+    id: "1",
+    title: "2nd Year",
+    text: "Familiar with your UNI by now? Here is your cheat-sheet mate as the game's about to get real.",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    iconUrl: "/sticky-notes.png",
+    imageUrl: "/2.png",
+    light: true,
+    url: "https://drive.google.com/drive/folders/1c2gZ8TJ53P3ecNETMB403lTueQY5pEHU",
+  },
+  {
+    id: "2",
+    title: "3rd Year",
+    text: "Your tech-stack matters more than your Notes dump but we know backlogs suck. So you know the rules!",
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    iconUrl: "/sticky-notes.png",
+    imageUrl: "/3.png",
+    url: "https://drive.google.com/drive/folders/1jUHgBPZdN5V5Am6gEHpHNTc4XWIQgC_W",
+  },
+  {
+    id: "3",
+    title: "4th Year",
+    text: "Study some between your coffee breaks at office. Your handouts for an even shorter preparation. All the best for future big bird!",
+    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    iconUrl: "/sticky-notes.png",
+    imageUrl: "/4.png",
+    light: true,
+    url: "https://drive.google.com/drive/folders/1LdrCdkcasmu_qA0vOK-UdI8UeThNhZ2C",
+  },
+];
