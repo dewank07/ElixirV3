@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Elixir | Home",
-  description: "Modern & Minimal JS Mastery Portfolio",
+  description: "The Elixir Tech Community",
 };
 
 export default function RootLayout({
