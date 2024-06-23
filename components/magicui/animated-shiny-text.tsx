@@ -5,11 +5,12 @@ interface AnimatedShinyTextProps {
   children: ReactNode;
   className?: string;
   shimmerWidth?: number;
+  link?: string;
 }
 
-const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({ children, className, shimmerWidth = 100 }) => {
+const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({ children, className, shimmerWidth = 100, link = "#" }) => {
   return (
-    <p
+    <a
       style={
         {
           "--shimmer-width": `${shimmerWidth}px`,
@@ -26,9 +27,11 @@ const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({ children, className, sh
 
         className,
       )}
+      href={link}
+      target='_balnk'
     >
       {children}
-    </p>
+    </a>
   );
 };
 

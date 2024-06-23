@@ -18,12 +18,12 @@ const Footer = () => {
         <p className='text-white-200 md:mt-10 my-5 text-center'>
           Reach out us today and let&apos;s discuss how we can help you achieve your goals.
         </p>
-        <a href='mailto:contact@jsmastery.pro'>
+        <a href='/get-in-touch'>
           <MagicButton title="Let's get in touch" icon={<FaLocationArrow />} position='right' />
         </a>
       </div>
       <div className='flex mt-16 md:flex-row flex-col justify-between items-center'>
-        <p className='md:text-sm text-xs md:font-normal font-light'>Copyright © 2024 GeeksforGeeks ABESEC</p>
+        <p className='md:text-sm text-xs md:font-normal font-light'>Copyright © 2024 Elixir Tech Community</p>
 
         <div className='flex items-center md:gap-3 gap-6 mt-4 md:mt-0'>
           {socialMedia.map((info) => (

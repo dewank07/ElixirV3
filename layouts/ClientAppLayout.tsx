@@ -8,7 +8,7 @@ import { navItems } from "@/data";
 
 function BackDrop() {
   return (
-    <div>
+    <>
       <div>
         <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white' />
         <Spotlight className='h-[80vh] w-[50vw] top-10 left-full' fill='purple' />
@@ -23,7 +23,7 @@ function BackDrop() {
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'
         />
       </div>
-    </div>
+    </>
   );
 }
 export default function ClientAppLayout({
@@ -34,7 +34,7 @@ export default function ClientAppLayout({
   return (
     <Provider store={appStore}>
       <FloatingNav navItems={navItems} />
-      <main className='relative  bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'>
+      <main className='relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'>
         <div className='max-w-7xl w-full mt-10'>
           {children}
           <Footer />
