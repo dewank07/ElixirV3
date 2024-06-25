@@ -15,7 +15,7 @@ function BackDrop() {
         <Spotlight className='left-80 top-28 h-[80vh] w-[50vw]' fill='purple' />
       </div>
       <div
-        className='w-full h-screen bg-black-100 dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+        className='w-full bg-black-100 dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center'
       >
         <div
