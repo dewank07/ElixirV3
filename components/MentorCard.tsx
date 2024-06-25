@@ -11,7 +11,9 @@ const MentorCard = ({ data }: { data: any }) => {
       <div className='absolute bg-gray-50 -bottom-24 h-44 w-60 p-3 flex flex-col  group-hover:-bottom-0 group-hover:duration-600 duration-500'>
         <span className='text-gray-400 font-semibold text-xs'>{data.skills}</span>
         <span className='text-gray-800 font-bold text-2xl'>{data.name}</span>
-        <p className='text-neutral-800 text-xs mt-1'>{data.description}</p>
+        <p className='text-neutral-800 text-xs mt-1'>
+          {data.description.length > 68 ? `${data.description.slice(0, 64)}...` : data.description}
+        </p>
         <div className='my-2 w-full flex items-center justify-between gap-10 '>
           <a
             href={data.discordLink}
