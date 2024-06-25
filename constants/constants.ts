@@ -39,3 +39,45 @@ export const NotesData = [
     url: "https://drive.google.com/drive/folders/1LdrCdkcasmu_qA0vOK-UdI8UeThNhZ2C",
   },
 ];
+export const MentorData = [
+  {
+    name: "Dewank Rastogi",
+    description: "Currently working at amber Student, Talk to me about Frontend!",
+    image: "/mentors/dewank.jpeg",
+    skills: "React, Frontend",
+    discordLink: "#",
+    LinkedinLink: "#",
+  },
+  {
+    name: "Manav Agarwal",
+    description: "Currently working at RechPlace, Talk to me about Django, Devops, System Design!",
+    image: "/mentors/dewank.jpeg",
+    skills: "Django, Devops, System Design, Go",
+    discordLink: "#",
+    LinkedinLink: "#",
+  },
+  {
+    name: "Dewank Rastogi",
+    description: "Currently working at amber Student, Talk to me about Frontend!",
+    image: "/mentors/dewank.jpeg",
+    skills: "React, Frontend",
+    discordLink: "#",
+    LinkedinLink: "#",
+  },
+  {
+    name: "Dewank Rastogi",
+    description: "Currently working at amber Student, Talk to me about Frontend!",
+    image: "/mentors/dewank.jpeg",
+    skills: "React, Frontend",
+    discordLink: "#",
+    LinkedinLink: "#",
+  },
+  {
+    name: "Dewank Rastogi",
+    description: "Currently working at amber Student, Talk to me about Frontend!",
+    image: "/mentors/dewank.jpeg",
+    skills: "React, Frontend",
+    discordLink: "#",
+    LinkedinLink: "#",
+  },
+];
