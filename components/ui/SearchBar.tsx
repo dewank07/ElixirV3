@@ -4,7 +4,7 @@ import { useState } from "react";
 import { PlaceholdersAndVanishInput } from "../ui/placeholders-and-vanish-input";
 import { MentorData } from "@/constants/constants";
 
-export function SearchBar({ mentors = [], setMentorData }: { mentors: any[]; setMentorData: (data: any) => void }) {
+export function SearchBar({ mentors = [{}], setMentorData }: { mentors: any[]; setMentorData: (data: any) => void }) {
   const placeholders = [
     "Search for React",
     "Search for Frontend",
@@ -43,10 +43,7 @@ export function SearchBar({ mentors = [], setMentorData }: { mentors: any[]; set
   };
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const searchTerm = "No Mentors Found";
-    const filteredMentors = getFilteredMentor(searchTerm);
-
-    if (filteredMentors.length === 1) {
+    if (mentors[0].name === "No Mentors Found") {
       setMentorData(MentorData);
     }
   };
