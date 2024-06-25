@@ -13,7 +13,7 @@ export function SearchBar({ mentors = [], setMentorData }: { mentors: any[]; set
     "Search for Devops",
   ];
   const getFilteredMentor = (searchTerm: string) => {
-    const filteredMentors = mentors.filter((mentor) => {
+    const filteredMentors = MentorData.filter((mentor) => {
       const values = Object.values(mentor);
       return values.some(
         (value) => typeof value === "string" && value.toLowerCase().includes(searchTerm.toLowerCase()),
