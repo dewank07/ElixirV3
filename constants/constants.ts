@@ -43,15 +43,23 @@ export const MentorData = [
   {
     name: "Dewank Rastogi",
     description: "Currently working at amber Student, Talk to me about Frontend!",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "React, Frontend",
+    discordLink: "#",
+    LinkedinLink: "#",
+  },
+  {
+    name: "Vandit Singh",
+    description: "Currently working at RapidFort, Talk to me about Backend!",
+    image: "/mentors/vandit.jpg",
+    skills: "Devops, Go",
     discordLink: "#",
     LinkedinLink: "#",
   },
   {
     name: "Manav Agarwal",
     description: "Currently working at RechPlace, Talk to me about Django, Devops, System Design!",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Django, Devops, System Design, Go",
     discordLink: "#",
     LinkedinLink: "#",
@@ -59,7 +67,7 @@ export const MentorData = [
   {
     name: "John Doe",
     description: "Experienced React developer with a passion for building scalable web applications.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "React, Redux, TypeScript",
     discordLink: "#",
     LinkedinLink: "#",
@@ -67,7 +75,7 @@ export const MentorData = [
   {
     name: "Jane Smith",
     description: "Full-stack developer proficient in Node.js, Express, and MongoDB.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Node.js, Express, MongoDB",
     discordLink: "#",
     LinkedinLink: "#",
@@ -75,7 +83,7 @@ export const MentorData = [
   {
     name: "Michael Johnson",
     description: "Skilled in Angular and front-end development with a focus on performance optimization.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Angular, RxJS, Optimization",
     discordLink: "#",
     LinkedinLink: "#",
@@ -83,7 +91,7 @@ export const MentorData = [
   {
     name: "Emily Davis",
     description: "Passionate about Python and data analysis, with experience in machine learning.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Python, Data Analysis, Machine Learning",
     discordLink: "#",
     LinkedinLink: "#",
@@ -91,7 +99,7 @@ export const MentorData = [
   {
     name: "David Wilson",
     description: "Experienced in developing secure and scalable backend systems using Java and Spring.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Java, Spring, Security",
     discordLink: "#",
     LinkedinLink: "#",
@@ -99,7 +107,7 @@ export const MentorData = [
   {
     name: "Sophia Thompson",
     description: "Front-end developer with expertise in React Native and cross-platform mobile app development.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "React Native, Mobile Development",
     discordLink: "#",
     LinkedinLink: "#",
@@ -107,7 +115,7 @@ export const MentorData = [
   {
     name: "William Anderson",
     description: "Skilled in DevOps practices, containerization, and cloud deployment with Docker and Kubernetes.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Docker, Kubernetes, DevOps",
     discordLink: "#",
     LinkedinLink: "#",
@@ -115,7 +123,7 @@ export const MentorData = [
   {
     name: "Olivia Martinez",
     description: "Experienced in developing scalable and high-performance applications using Go.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Go, Concurrency, Performance",
     discordLink: "#",
     LinkedinLink: "#",
@@ -123,7 +131,7 @@ export const MentorData = [
   {
     name: "James Brown",
     description: "Front-end developer with a strong focus on accessibility and inclusive design.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Accessibility, Inclusive Design",
     discordLink: "#",
     LinkedinLink: "#",
@@ -131,7 +139,7 @@ export const MentorData = [
   {
     name: "Ava Garcia",
     description: "Skilled in developing secure and robust applications using C# and .NET.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "C#, .NET, Security",
     discordLink: "#",
     LinkedinLink: "#",
@@ -139,7 +147,7 @@ export const MentorData = [
   {
     name: "Benjamin Rodriguez",
     description: "Front-end developer with expertise in Vue.js and state management with Vuex.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Vue.js, Vuex, State Management",
     discordLink: "#",
     LinkedinLink: "#",
@@ -147,7 +155,7 @@ export const MentorData = [
   {
     name: "Isabella Hernandez",
     description: "Experienced in developing scalable and efficient back-end systems using Node.js and AWS.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Node.js, AWS, Serverless",
     discordLink: "#",
     LinkedinLink: "#",
@@ -155,7 +163,7 @@ export const MentorData = [
   {
     name: "Daniel Gonzalez",
     description: "Skilled in developing responsive and accessible web applications using React and Material-UI.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "React, Material-UI, Accessibility",
     discordLink: "#",
     LinkedinLink: "#",
@@ -163,7 +171,7 @@ export const MentorData = [
   {
     name: "Sophia Perez",
     description: "Passionate about data visualization and front-end development with D3.js.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "D3.js, Data Visualization",
     discordLink: "#",
     LinkedinLink: "#",
@@ -171,7 +179,7 @@ export const MentorData = [
   {
     name: "Alexander Sanchez",
     description: "Experienced in developing secure and scalable back-end systems using Ruby on Rails.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Ruby on Rails, Security, Scalability",
     discordLink: "#",
     LinkedinLink: "#",
@@ -179,7 +187,7 @@ export const MentorData = [
   {
     name: "Mia Torres",
     description: "Front-end developer with expertise in React and state management with Redux.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "React, Redux, State Management",
     discordLink: "#",
     LinkedinLink: "#",
@@ -187,7 +195,7 @@ export const MentorData = [
   {
     name: "Matthew Rivera",
     description: "Skilled in developing scalable and efficient back-end systems using Python and Django.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Python, Django, Scalability",
     discordLink: "#",
     LinkedinLink: "#",
@@ -195,7 +203,7 @@ export const MentorData = [
   {
     name: "Abigail Ramirez",
     description: "Experienced in developing secure and robust applications using Java and Spring Boot.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Java, Spring Boot, Security",
     discordLink: "#",
     LinkedinLink: "#",
@@ -203,7 +211,7 @@ export const MentorData = [
   {
     name: "Jacob Flores",
     description: "Front-end developer with expertise in Angular and state management with NgRx.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Angular, NgRx, State Management",
     discordLink: "#",
     LinkedinLink: "#",
@@ -211,7 +219,7 @@ export const MentorData = [
   {
     name: "Avery Gomez",
     description: "Skilled in developing scalable and efficient back-end systems using Node.js and MongoDB.",
-    image: "/mentors/dewank.jpeg",
+    image: "/mentors/dewank.jpg",
     skills: "Node.js, MongoDB, Scalability",
     discordLink: "#",
     LinkedinLink: "#",
