@@ -4,8 +4,10 @@ import React from "react";
 
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import MagicButton from "./MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
-const Clients = () => {
+const Testimonials = () => {
   return (
     <section id='testimonials' className='py-20'>
       <h1 className='heading'>
@@ -20,8 +22,11 @@ const Clients = () => {
         >
           <InfiniteMovingCards items={testimonials} direction='right' speed='slow' />
         </div>
+        <a href='/testimonials'>
+          <MagicButton title='View More' icon={<FaLocationArrow />} position='right' />
+        </a>
 
-        <div className='flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10'>
+        <div className='flex flex-wrap items-center justify-center gap-4 md:gap-16 mt-20'>
           {companies.map((company) => (
             <React.Fragment key={company.id}>
               <div className='flex md:max-w-60 max-w-32 gap-2'>
@@ -41,4 +46,4 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export default Testimonials;

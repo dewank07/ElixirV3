@@ -2,14 +2,15 @@
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import Image from "next/image";
 
-const RecentProjects = () => {
+const ChapterSection = () => {
   return (
     <div className='py-20'>
       <h1 className='heading'>
         Our Core <span className='text-purple'>Societies</span>
       </h1>
-      <div className='flex flex-wrap items-center justify-center p-4 gap-16 mt-10'>
+      <div className='flex flex-wrap items-center justify-center p-4 gap-20 mt-10'>
         {projects.map((item, idx) => (
           <div className='h-auto w-64 flex items-center justify-center' key={idx}>
             <PinContainer title={item.title} href={item.link}>
@@ -19,10 +20,18 @@ const RecentProjects = () => {
                 }`}
               >
                 <h3 className='max-w-xs !pb-2 !m-0 font-normal  text-base text-slate-100'>{item.title}</h3>
-                <div className='text-base !m-0 !p-0 font-normal'>
+                <div className='text-sm !m-0 !p-0 font-normal'>
                   <span className='text-slate-500 '>{item.des}</span>
                 </div>
-                <div className='flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500' />
+                <div className='flex flex-1 w-full rounded-lg object-contain mt-4'>
+                  <Image
+                    src={item.img}
+                    alt='tect'
+                    width={350}
+                    height={200}
+                    className='flex flex-1 w-full rounded-lg '
+                  />
+                </div>
               </div>
             </PinContainer>
           </div>
@@ -32,4 +41,4 @@ const RecentProjects = () => {
   );
 };
 
-export default RecentProjects;
+export default ChapterSection;

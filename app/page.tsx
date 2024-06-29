@@ -1,8 +1,8 @@
 "use client";
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
-import Clients from "@/components/Clients";
-import RecentProjects from "@/components/RecentProjects";
+import Testimonials from "@/components/Testimonials";
+import ChapterSection from "@/components/ChapterSection";
 import { GlobeSection } from "@/components/GlobeSection";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -19,8 +19,8 @@ const Home = () => {
       </motion.div>
       <Hero />
       <Grid />
-      <RecentProjects />
-      <Clients />
+      <ChapterSection />
+      <Testimonials />
       <GlobeSection />
     </div>
   );
