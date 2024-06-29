@@ -3,8 +3,18 @@
   padding: 1rem;
   margin: 0 auto;
 }
+.testimonials {
+  background: rgb(4, 7, 29);
+  background-color: linear-gradient(90deg, rgba(4, 7, 29, 1) 0%, rgba(12, 14, 35, 1) 100%);
+  width: 22rem;
+  height: 25rem;
+}
 @media screen and (min-width: 768px) {
   .formContainer {
     width: 50%;
+  }
+  .testimonials {
+    width: 30rem;
+    height: 26rem;
   }
 }

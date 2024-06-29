@@ -2,23 +2,16 @@
 // import ClipPath from "@/assets/svg/ClipPath";
 import PageHeading from "@/components/PageHeading";
 import { testimonials } from "@/data";
-
+import { cn } from "@/lib/utils";
+import styles from "./layouts.module.css";
 const TestimonialsPageLayout = () => {
   return (
     <div className='pt-20 relative z-10'>
       <div className='flex flex-col items-center justify-center'>
-        <PageHeading smallHeading='Take A Note(s)' longHeading='YOUR LAST NIGHT STUDY GUIDE' />
+        <PageHeading smallHeading='Members' longHeading='LISTEN TO OUR TESTIMONIALS' />
         <ul className='flex items-center justify-center flex-wrap ' style={{ gap: "3rem", padding: "4rem 0" }}>
           {testimonials.map((item, idx) => (
-            <li
-              className='rounded-2xl border border-slate-800 p-5 md:p-16 '
-              style={{
-                background: "rgb(4,7,29)",
-                backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-                width: "30rem",
-              }}
-              key={idx}
-            >
+            <li className={cn("rounded-2xl border border-slate-800 p-5 md:p-16 ", styles.testimonials)} key={idx}>
               <blockquote>
                 <span className=' relative z-20 text-sm md:text-base leading-[1.6] text-white font-normal'>
                   {item.quote}
