@@ -81,7 +81,7 @@ export const projects = [
   {
     id: 2,
     title: "GeeksforGeeks ABESEC",
-    des: "Geeks for Geeks ABESEC aims to create an advanced community where learning and fun coexist.This motivates developers to grow and excel together.",
+    des: "GeeksforGeeks ABESEC aims to create an advanced community where learning and fun coexist.This motivates developers to grow and excel together.",
     img: "/gfgThumbnail.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/ui.yoom.com",
@@ -89,7 +89,7 @@ export const projects = [
   {
     id: 3,
     title: "GDSC ABESEC",
-    des: "The GDSC ABESEC promotes learning, collaboration, and personal development to explore new technologies and exchange knowledge on their path to success.",
+    des: "GDSC ABESEC fosters learning, collaboration, and personal growth, exploring new technologies and exchanging knowledge for success.",
     img: "/gdscThumbnail.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/ui.aiimg.com",
