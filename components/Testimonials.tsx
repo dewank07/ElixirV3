@@ -22,7 +22,7 @@ const Testimonials = () => {
         >
           <InfiniteMovingCards items={testimonials} direction='right' speed='slow' />
         </div>
-        <a href='/testimonials'>
+        <a href='/testimonials' className='mt-10 md:mt-0'>
           <MagicButton title='View More' icon={<FaLocationArrow />} position='right' />
         </a>
 
