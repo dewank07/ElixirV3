@@ -11,7 +11,7 @@ export async function POST(request: Request) {
   try {
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "dewankrastogi007@gmail.com",
+      to: "techcommunityelixir@gmail.com",
       subject: `Message from ${value.from_name}`,
       react: EmailTemplate({ firstName: value.from_name, email: value.reply_to, message: value.message }),
       text: "This is a fallback text for email clients that don't support React rendering.",

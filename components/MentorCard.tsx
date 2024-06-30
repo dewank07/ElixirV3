@@ -14,7 +14,7 @@ const MentorCard = ({ data }: { data: any }) => {
           className='object-cover w-full h-full'
         />
       </div>
-      <div className='absolute bg-gray-50 -bottom-[113px] h-44 w-64 p-3 flex flex-col  group-hover:-bottom-0 group-hover:duration-600 duration-500'>
+      <div className='absolute bg-gray-50 -bottom-[105px] h-44 w-64 p-3 flex flex-col  group-hover:-bottom-0 group-hover:duration-600 duration-500'>
         <span className='text-gray-800 font-bold text-xl'>{data.name}</span>
 
         <span className='text-gray-400 text-xs'>{data.techStack}</span>
