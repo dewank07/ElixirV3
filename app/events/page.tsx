@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <div className='pt-20 relative z-10 '>
       <div className='flex flex-col items-center justify-center relative'>
-        <PageHeading smallHeading='Our Events' longHeading='WHERE TECH MEETS THE CREATIVITY' />
+        <PageHeading smallHeading='Our Events' longHeading="That's how we roll!" />
         <div className='flex flex-wrap justify-center items-stretch gap-16 pt-10'>
           {events?.map((event: Event) => (
             <EventsCard

@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const navItems = [
   { name: "Home", link: "/" },
   { name: "Events", link: "/events" },
@@ -109,7 +111,7 @@ export const testimonials = [
       "Since joining Elixir in 2020, I've led the CodeChef chapter, gaining skills in event organization and teamwork. This experience taught me to prioritize my interests and excel in them. My advice: focus on what you love and pursue it passionately. Teaching is my passion, and I enjoy hosting engaging talk sessions. I'm eager for ideas to enhance our sessions and community engagement. Let's innovate and grow together.",
     name: "Tanveer Raza",
     title: "Batch 2023",
-    img: "/mentors/tanveer.png",
+    img: "/mentors/tanveer.jpg",
   },
   {
     quote:
@@ -252,13 +254,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/ElixirTechCommunity",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://twitter.com/TheElixirTech",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/discord.svg",
+    link: "http://dsc.gg/elixirtechcommunity",
   },
 ];

@@ -28,7 +28,7 @@ export const TextGenerateEffect = ({ words, className }: { words: string; classN
             <motion.span
               key={word + idx}
               // change here if idx is greater than 3, change the text color to #CBACF9
-              className={` ${idx > 2 ? "text-purple" : "dark:text-white text-black"} opacity-0`}
+              className={` ${idx > 3 ? "text-purple" : "dark:text-white text-black"} opacity-0`}
             >
               {idx > 3 ? <TypingAnimation text={word} /> : word}{" "}
             </motion.span>
