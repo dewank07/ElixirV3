@@ -79,7 +79,7 @@ const Grid = () => {
       </WobbleCard>
       <WobbleCard containerClassName='col-span-1 min-h-[300px]'>
         <h2 className='max-w-80  text-left text-balance text-2xl md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white'>
-          No Projects, no skills, Build own your own
+          No Projects, no skills, Build on your own
         </h2>
         <p className='mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200'></p>
         <a href={"https://codingchallenges.fyi/challenges/intro"} target='_blank'>
