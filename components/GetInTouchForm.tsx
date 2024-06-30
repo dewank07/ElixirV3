@@ -54,8 +54,8 @@ export function GetInTouchForm() {
   return (
     <Card className='w-full'>
       <CardHeader className='flex flex-col items-center justify-between'>
-        <CardTitle>Fill up this small </CardTitle>
-        <CardDescription>Deploy your new project in one-click.</CardDescription>
+        <CardTitle></CardTitle>
+        <CardDescription></CardDescription>
       </CardHeader>
       <CardContent>
         <form>

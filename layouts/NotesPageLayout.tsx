@@ -12,8 +12,8 @@ const NotesPageLayout = () => {
       <div className='flex flex-col items-center justify-center'>
         <PageHeading smallHeading='Take A Note(s)' longHeading='YOUR LAST NIGHT STUDY GUIDE' />
         <div className='flex items-center justify-center flex-wrap ' style={{ gap: "5rem", padding: "4rem 0" }}>
-          {NotesData.map((item) => (
-            <div className='m-10'>
+          {NotesData.map((item, idx) => (
+            <div className='m-10' key={idx}>
               <Link
                 href={item.url}
                 target='_blank'
