@@ -1,11 +1,11 @@
 export default async function sendContactForm({
   name,
-  fromEmail,
-  issue,
+  email,
+  message,
 }: {
   name: string;
-  fromEmail: string;
-  issue: string;
+  email: string;
+  message: string;
 }) {
   const response: any = await fetch("/api/send", {
     method: "POST",
@@ -14,8 +14,8 @@ export default async function sendContactForm({
     },
     body: JSON.stringify({
       from_name: name,
-      reply_to: fromEmail,
-      message: issue,
+      reply_to: email,
+      message: message,
     }),
   })
     .then((res) => {

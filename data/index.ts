@@ -78,7 +78,7 @@ export const Chapters = [
     des: "In CodeChef ABESEC, we create an environment for members to challenge themselves, collaborate, and improve their skills, leading to unanimous success.",
     img: "/ccThumbnail.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "google.com",
+    link: "https://www.instagram.com/abesec.codechef/",
   },
   {
     id: 2,
@@ -86,7 +86,7 @@ export const Chapters = [
     des: "GeeksforGeeks ABESEC aims to create an advanced community where learning and fun coexist.This motivates developers to grow and excel together.",
     img: "/gfgThumbnail.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://www.instagram.com/geeksforgeeks_abesec/",
   },
   {
     id: 3,
@@ -94,7 +94,7 @@ export const Chapters = [
     des: "GDSC ABESEC fosters learning, collaboration, and personal growth, exploring new technologies and exchanging knowledge for success.",
     img: "/gdscThumbnail.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://www.instagram.com/gdsc.abesec/",
   },
 ];
 

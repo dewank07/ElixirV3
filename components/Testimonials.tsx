@@ -26,7 +26,7 @@ const Testimonials = () => {
           <MagicButton title='View More' icon={<FaLocationArrow />} position='right' />
         </a>
 
-        <div className='flex flex-wrap items-center justify-center gap-4 md:gap-16 mt-20'>
+        <div className=' hidden flex-wrap items-center justify-center gap-4 md:gap-16 mt-20'>
           {companies.map((company) => (
             <React.Fragment key={company.id}>
               <div className='flex md:max-w-60 max-w-32 gap-2'>
