@@ -1,17 +1,25 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const useDailyDsaQuestion = async () => {
-  try {
-    const url = "https://us-central1-neetcode-dd170.cloudfunctions.net/getProblemListFunction";
+  const [data, setData] = useState({});
+  const fetchQuestion = async () => {
+    try {
+      const url = "https://us-central1-neetcode-dd170.cloudfunctions.net/getProblemListFunction";
 
-    const response = await axios.post(url, { data: {} });
-    return response.data;
-  } catch (error) {
-    // Handle error, e.g., log it or show an error message
-    console.error("Error fetching problem list:", error);
-    throw error;
-  }
+      const response = await axios.post(url, { data: {} });
+      return response.data.results;
+    } catch (error) {
+      // Handle error, e.g., log it or show an error message
+      console.error("Error fetching problem list:", error);
+      throw error;
+    }
+  };
+  useEffect(() => {
+    setData(fetchQuestion());
+  }, []);
+
+  return data;
 };
 
 export default useDailyDsaQuestion;

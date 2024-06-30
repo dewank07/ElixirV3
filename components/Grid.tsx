@@ -1,29 +1,45 @@
 "use client";
-import useDailyDsaQuestion from "@/hooks/useDailyDsaQuestion";
 import { WobbleCard } from "./ui/wobble-card";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
-const getRandomProblem = (problemsMap) => {
-  const problemKeys = Object.keys(problemsMap);
-  const randomIndex = Math.floor(Math.random() * problemKeys.length);
-  const randomKey = problemKeys[randomIndex];
-  if (!problemsMap[randomKey].free) {
-    return getRandomProblem(problemsMap);
-  }
-  return problemsMap[randomKey];
-};
+import axios from "axios";
+interface Problem {
+  // Define the properties of the Problem object
+  id: string;
+  name: string;
+  free: boolean;
+  // Add any other properties as needed
+}
 
 const Grid = () => {
-  const [randomProblem, setRandomProblem] = useState({});
+  const [randomProblem, setRandomProblem] = useState(null);
+  //@ts-ignore
+  // eslint-disable-next-line
+  const getRandomProblem = (problemsMap) => {
+    const problemKeys = Object.keys(problemsMap);
+    const randomIndex = Math.floor(Math.random() * problemKeys.length);
+    const randomKey = problemKeys[randomIndex];
+    if (!problemsMap[randomKey].free) {
+      return getRandomProblem(problemsMap);
+    }
+    return problemsMap[randomKey];
+  };
 
   useEffect(() => {
-    const callDsa = async () => {
-      const data = await useDailyDsaQuestion();
-      const dailyProblem = getRandomProblem(data.result);
-      setRandomProblem(dailyProblem);
+    const fetchQuestion = async () => {
+      try {
+        const url = "https://us-central1-neetcode-dd170.cloudfunctions.net/getProblemListFunction";
+
+        const response = await axios.post(url, { data: {} });
+        const data = response.data.results;
+        const randomProblem = getRandomProblem(data);
+        setRandomProblem(randomProblem);
+      } catch (error) {
+        console.error("Error fetching problem list:", error);
+        throw error;
+      }
     };
-    callDsa();
+    fetchQuestion();
   }, []);
 
   return (
@@ -36,10 +52,14 @@ const Grid = () => {
           <h2 className='text-left text-balance text-3xl md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white'>
             Daily DSA Question by NeetCode
           </h2>
-          {Object.keys(randomProblem).length != 0 && (
+          {randomProblem && Object.keys(randomProblem).length != 0 && (
+            //@ts-ignore
             <a href={"https://neetcode.io/problems/" + randomProblem.id} target='_blank'>
               <div className='absolute top-48 md:top-52 text-xl px-4 cursor-pointer py-2 border border-white rounded-lg'>
-                {randomProblem.name}
+                {
+                  //@ts-ignore
+                  randomProblem.name
+                }
               </div>
             </a>
           )}
