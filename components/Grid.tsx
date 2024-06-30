@@ -3,20 +3,13 @@ import { WobbleCard } from "./ui/wobble-card";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
-interface Problem {
-  // Define the properties of the Problem object
-  id: string;
-  name: string;
-  free: boolean;
-  // Add any other properties as needed
-}
 
 const Grid = () => {
-  const [randomProblem, setRandomProblem] = useState(null);
+  const [randomProblem, setRandomProblem] = useState({});
   //@ts-ignore
   // eslint-disable-next-line
   const getRandomProblem = (problemsMap) => {
-    const problemKeys = Object.keys(problemsMap);
+    const problemKeys = Object?.keys(problemsMap);
     const randomIndex = Math.floor(Math.random() * problemKeys.length);
     const randomKey = problemKeys[randomIndex];
     if (!problemsMap[randomKey].free) {
@@ -29,10 +22,10 @@ const Grid = () => {
     const fetchQuestion = async () => {
       try {
         const url = "https://us-central1-neetcode-dd170.cloudfunctions.net/getProblemListFunction";
-
         const response = await axios.post(url, { data: {} });
-        const data = response.data.results;
-        const randomProblem = getRandomProblem(data);
+        const data = response.data;
+        const randomProblem = getRandomProblem(data.result);
+        console.log(randomProblem);
         setRandomProblem(randomProblem);
       } catch (error) {
         console.error("Error fetching problem list:", error);
