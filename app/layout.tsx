@@ -27,6 +27,12 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning>
       <head>
         <link rel='icon' href='/jsm-logo.png' sizes='any' />
+        <meta property='og:title' content='Elixir Tech Community' />
+        <meta
+          property='og:description'
+          content='Elixir fosters a collaborative tech community dedicated to comprehensive learning, offering a supportive environment for growth and innovation.'
+        />
+        <meta property='og:image' content='/HomeScreen.png' />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute='class' defaultTheme='dark' enableSystem disableTransitionOnChange>
