@@ -19,7 +19,7 @@ const Footer = () => {
           Reach out us today and let&apos;s discuss how we can help you achieve your goals.
         </p>
         <a href='/get-in-touch'>
-          <MagicButton title="Let's get in touch" icon={<FaLocationArrow />} position='right' />
+          <MagicButton title='Reach out to us today' icon={<FaLocationArrow />} position='right' />
         </a>
       </div>
       <div className='flex mt-16 md:flex-row flex-col justify-between items-center'>

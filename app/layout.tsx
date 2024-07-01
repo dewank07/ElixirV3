@@ -9,8 +9,13 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Elixir | Home",
-  description: "The Elixir Tech Community",
+  title: {
+    template: `%s | Elixir Tech Community`,
+    default: "Elixir Tech Community",
+  },
+  description:
+    "Elixir fosters a collaborative tech community dedicated to comprehensive learning, offering a supportive environment for growth and innovation.",
+  metadataBase: new URL("https://www.elixircommunity.in/"),
 };
 
 export default function RootLayout({
