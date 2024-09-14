@@ -138,7 +138,7 @@ export const MentorData = [
   },
   {
     name: "Abhinav Yadav",
-    image: "/mentors/abhinav.png",
+    image: "/mentors/abhinavY.png",
     discord: "abhi0001",
     linkedIn: "https://www.linkedin.com/in/abhinavyadav13/",
     techStack: "Open Source",
