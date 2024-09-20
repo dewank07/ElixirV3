@@ -106,7 +106,7 @@ export const MentorData = [
   },
   {
     name: "Tanveer Raza",
-    image: "/mentors/tanveer.png",
+    image: "/mentors/tanveer.jpg",
     discord: "atamakahere",
     linkedIn: "https://www.linkedin.com/in/atamakahere",
     techStack: "Rust, Linux System Programming",
