@@ -65,7 +65,7 @@ export const MentorData = [
     bannerKeywords: "Frontend",
   },
   {
-    name: "Manav bhaiya",
+    name: "Manav Agarwal",
     image: "/mentors/manav.png",
     discord: "m4n4v014",
     linkedIn: "https://www.linkedin.com/in/manav014",
