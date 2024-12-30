@@ -65,7 +65,7 @@ export const MentorData = [
     bannerKeywords: "Frontend",
   },
   {
-    name: "Manav bhaiya",
+    name: "Manav Agarwal",
     image: "/mentors/manav.png",
     discord: "m4n4v014",
     linkedIn: "https://www.linkedin.com/in/manav014",
@@ -106,7 +106,7 @@ export const MentorData = [
   },
   {
     name: "Tanveer Raza",
-    image: "/mentors/tanveer.png",
+    image: "/mentors/tanveer.jpg",
     discord: "atamakahere",
     linkedIn: "https://www.linkedin.com/in/atamakahere",
     techStack: "Rust, Linux System Programming",
@@ -138,7 +138,7 @@ export const MentorData = [
   },
   {
     name: "Abhinav Yadav",
-    image: "/mentors/abhinav.png",
+    image: "/mentors/abhinavY.png",
     discord: "abhi0001",
     linkedIn: "https://www.linkedin.com/in/abhinavyadav13/",
     techStack: "Open Source",
