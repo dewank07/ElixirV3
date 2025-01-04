@@ -25,10 +25,10 @@ const Grid = () => {
         // const url = "https://us-central1-neetcode-dd170.cloudfunctions.net/getProblemListFunction";
         // const response = await axios.post(url, { data: {} });
         // const data = response.data;
-        // const randomProblem = getRandomProblem(data.result);
+        const randomProblem = getRandomProblem(randomProblemConst);
         // console.log(randomProblem);
 
-        setRandomProblem(randomProblemConst);
+        setRandomProblem(randomProblem);
       } catch (error) {
         console.error("Error fetching problem list:", error);
         throw error;
