@@ -25,7 +25,7 @@ const Grid = () => {
         // const url = "https://us-central1-neetcode-dd170.cloudfunctions.net/getProblemListFunction";
         // const response = await axios.post(url, { data: {} });
         // const data = response.data;
-        const randomProblem = getRandomProblem(randomProblemConst);
+        const randomProblem = getRandomProblem(randomProblemConst.result);
         // console.log(randomProblem);
 
         setRandomProblem(randomProblem);
