@@ -3,7 +3,7 @@ import { AnimatedShinyTextDemo } from "./AnimatedShinyBtn";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const PageHeading = ({
-  smallHeading,
+   smallHeading,
   longHeading,
   link,
 }: {
