@@ -36,6 +36,7 @@ const ChapterSection = () => {
                   </div>
                 </div>
               </PinContainer>
+
             </Link>
           </div>
         ))}
