@@ -7,7 +7,7 @@ const PageHeading = ({
   longHeading,
   link,
 }: {
-  smallHeading: string;
+  smallHeading?: string;
   longHeading: string;
   link?: string;
 }) => {
