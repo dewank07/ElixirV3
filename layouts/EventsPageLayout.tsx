@@ -1,11 +1,10 @@
 "use client";
-
 import dynamic from "next/dynamic";
 const EventsCard = dynamic(() => import("@/components/EventsCard"));
 
 import PageHeading from "@/components/PageHeading";
 import useEventApi from "@/hooks/useEventApi";
-import { useSelector } from "react-redux";
+
 type Event = {
   id: number;
   name: string;
@@ -17,8 +16,7 @@ type Event = {
 };
 
 const EventsPageLayout = () => {
-  const events = useSelector((store: any) => store?.event?.events);
-  useEventApi();
+  const { events } = useEventApi();
 
   return (
     <div className="pt-20 relative z-10 ">
