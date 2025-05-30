@@ -8,18 +8,21 @@ import { addEvents } from "@/store/slices/eventSlice";
 const useEventApi = () => {
   const dispatch = useDispatch();
   const events = useSelector((store: any) => store?.event?.events);
-  const fetchevents = async () => {
-    try {
-      const events = await axios.get(EVENT_API);
-      dispatch(addEvents(events.data));
-    } catch (err) {
-      console.log(err);
-    }
-  };
 
   useEffect(() => {
-    !events && fetchevents();
-  }, []);
+    const fetchEvents = async () => {
+      try {
+        const res = await axios.get(EVENT_API);
+        dispatch(addEvents(res.data));
+      } catch (err) {
+        console.error("Failed to fetch events", err);
+      }
+    };
+
+    if (!events || events.length === 0) {
+      fetchEvents();
+    }
+  }, [dispatch, events]);
 };
 
 export default useEventApi;
