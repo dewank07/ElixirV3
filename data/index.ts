@@ -1,4 +1,3 @@
-import { link } from "fs";
 
 export const navItems = [
   { name: "Home", link: "/" },
@@ -76,7 +75,7 @@ export const Chapters = [
     id: 1,
     title: "CodeChef ABESEC",
     des: "In CodeChef ABESEC, we create an environment for members to challenge themselves, collaborate, and improve their skills, leading to unanimous success.",
-    img: "/ccThumbnail.png",
+    img: "/ccThumbnail.webp",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://www.instagram.com/abesec.codechef/",
   },
@@ -84,7 +83,7 @@ export const Chapters = [
     id: 2,
     title: "GeeksforGeeks ABESEC",
     des: "GeeksforGeeks ABESEC aims to create an advanced community where learning and fun coexist.This motivates developers to grow and excel together.",
-    img: "/gfgThumbnail.png",
+    img: "/gfgThumbnail.webp",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://www.instagram.com/geeksforgeeks_abesec/",
   },
@@ -92,7 +91,7 @@ export const Chapters = [
     id: 3,
     title: "GDSC ABESEC",
     des: "GDSC ABESEC fosters learning, collaboration, and personal growth, exploring new technologies and exchanging knowledge for success.",
-    img: "/gdscThumbnail.png",
+    img: "/gdscThumbnail.webp",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://www.instagram.com/gdg.abesec/",
   },
@@ -163,13 +162,13 @@ export const testimonials = [
     title: "Batch 2026",
     img: "/mentors/satyam.png",
   },
-  {
-    quote:
-      "Since 2021, Elixir has been instrumental in my personal growth through tech upscaling and peer learning. The community's diverse expertise encourages open discussions and mentorship, creating a hub of motivation. Our collaborative spirit sets us apart, as we strive for collective growth and host impactful events that leave a lasting impression.",
-    name: "Abhinav Jha",
-    title: "Batch 2025",
-    img: "/mentors/abhinav.png",
-  },
+  // {
+  //   quote:
+  //     "Since 2021, Elixir has been instrumental in my personal growth through tech upscaling and peer learning. The community's diverse expertise encourages open discussions and mentorship, creating a hub of motivation. Our collaborative spirit sets us apart, as we strive for collective growth and host impactful events that leave a lasting impression.",
+  //   name: "Abhinav Jha",
+  //   title: "Batch 2025",
+  //   img: "/mentors/abhinav.png",
+  // },
   {
     quote:
       "Since 2020, Elixir has been more than a network; it's a supportive community that felt like family throughout college. I played a role in reviving our Discord server, enjoying enriching discussions and launching our website. Elixir stands out for nurturing growth without judgment. Introducing regular game nights on Discord would further enhance our community, making it even more engaging and enjoyable for everyone involved.",
