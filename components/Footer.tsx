@@ -2,6 +2,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/constants/constants";
 import MagicButton from "./MagicButton";
 import Image from "next/image";
+import Image from "next/image";
 
 const Footer = () => {
   return (

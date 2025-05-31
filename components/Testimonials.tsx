@@ -7,6 +7,7 @@ import { InfiniteMovingCards } from "./ui/InfiniteCards";
 import MagicButton from "./MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import Image from "next/image";
+import Image from "next/image";
 
 const Testimonials = () => {
   return (
