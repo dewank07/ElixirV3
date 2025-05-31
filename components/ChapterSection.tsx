@@ -4,13 +4,9 @@ import { Chapters } from "@/constants/constants";
 import { PinContainer } from "./ui/Pin";
 import Image from "next/image";
 import Link from "next/link";
-import Link from "next/link";
 
 const ChapterSection = () => {
   return (
-    <div className="py-20">
-      <h1 className="heading">
-        Our Core <span className="text-purple">Societies</span>
     <div className="py-20">
       <h1 className="heading">
         Our Core <span className="text-purple">Societies</span>

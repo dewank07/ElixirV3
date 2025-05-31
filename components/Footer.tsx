@@ -2,7 +2,6 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/constants/constants";
 import MagicButton from "./MagicButton";
 import Image from "next/image";
-import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -28,7 +27,6 @@ const Footer = () => {
         <p className="md:text-sm text-xs md:font-normal font-light">
           Copyright © 2024 Elixir Tech Community
         </p>
-
         <div className="flex items-center md:gap-3 gap-6 mt-4 md:mt-0">
           {socialMedia.map((info) => (
             <a href={info.link} target="_blank" rel="noreferrer" key={info.id}>
