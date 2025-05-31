@@ -13,10 +13,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-    <section id="testimonials" className="py-20">
-      <h1 className="heading">
         Listen from
-        <span className="text-purple"> the members</span>
         <span className="text-purple"> the members</span>
       </h1>
 
@@ -37,7 +34,6 @@ const Testimonials = () => {
         </a>
 
         <div className=" hidden flex-wrap items-center justify-center gap-4 md:gap-16 mt-20">
-        <div className=" hidden flex-wrap items-center justify-center gap-4 md:gap-16 mt-20">
           {companies.map((company) => (
             <div
               key={company.id}
@@ -56,13 +52,11 @@ const Testimonials = () => {
                 <Image
                   src={company.nameImg}
                   alt={`${company.name} name`}
-                  alt={`${company.name} name`}
                   width={company.id === 4 || company.id === 5 ? 100 : 150}
                   height={24}
                   className="w-20 sm:w-24 md:w-32 object-contain"
                 />
               </div>
-            </div>
             </div>
           ))}
         </div>
