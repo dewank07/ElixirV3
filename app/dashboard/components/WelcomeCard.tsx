@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-const WelcomeCard = ({name}: {name: string}) => {
+const WelcomeCard = ({ name }: { name: string }) => {
   return (
     <>
       <div className="rounded-2xl p-8 bg-[rgba(17,25,40,0.85)] backdrop-blur-lg border border-white/10 shadow-xl flex flex-col items-start relative overflow-hidden">
@@ -10,13 +10,13 @@ const WelcomeCard = ({name}: {name: string}) => {
             Welcome back, <span className="text-[#CBACF9]">{name}!</span>
           </h2>
           <p className="text-white/80 text-lg">
-            Here's what's happening today.
+            Here&apos;s what&apos;s happening today.
           </p>
         </div>
         <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-purple/20 rounded-full blur-3xl" />
       </div>
     </>
   );
-}
+};
 
-export default WelcomeCard
+export default WelcomeCard;

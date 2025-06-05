@@ -24,15 +24,12 @@ const ManagementSection: React.FC<ExtendedManagementSectionProps> = ({
           </button>
         )}
       </div>
-      <div className={managementStyles.table}>
-        <table className="w-full">
+      <div className={managementStyles.table.container}>
+        <table className={managementStyles.table.table}>
           <thead>
-            <tr>
+            <tr className={managementStyles.table.header}>
               {columns.map((column: Column, index: number) => (
-                <th
-                  key={index}
-                  className="text-left py-3 px-4 text-sm font-medium text-white/60"
-                >
+                <th key={index} className={managementStyles.table.headerCell}>
                   {column.header}
                 </th>
               ))}
@@ -42,14 +39,11 @@ const ManagementSection: React.FC<ExtendedManagementSectionProps> = ({
             {data.map((row, rowIndex) => (
               <tr
                 key={rowIndex}
-                className="border-t border-white/10 hover:bg-white/5 transition-colors cursor-pointer"
+                className={managementStyles.table.row}
                 onClick={onRowClick ? () => onRowClick(row) : undefined}
               >
                 {columns.map((column: Column, colIndex: number) => (
-                  <td
-                    key={colIndex}
-                    className="py-3 px-4 text-sm text-white/80"
-                  >
+                  <td key={colIndex} className={managementStyles.table.cell}>
                     {column.accessor(row)}
                   </td>
                 ))}
