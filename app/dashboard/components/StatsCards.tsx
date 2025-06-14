@@ -1,4 +1,3 @@
-import React from "react";
 import { StatCardProps } from "../types";
 import { colorSchemes, baseCardStyles } from "../styles";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { ManagementSectionProps, Column } from "../types";
 import { managementStyles } from "../styles";
 

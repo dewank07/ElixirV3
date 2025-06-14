@@ -1,8 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import WelcomeSection from "../components/WelcomeSection";
-import QuickStats from "../components/QuickStats";
 import ManagementSection from "../components/ManagementSection";
 import Modal from "../components/Modal";
 import StatsCards from "../components/StatsCards";

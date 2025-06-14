@@ -1,5 +1,3 @@
-import React from "react";
-
 type StatColorScheme = "purple" | "blue" | "green" | "orange";
 
 interface StatItem {

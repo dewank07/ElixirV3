@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import { ModalProps } from "../types";
 import { modalStyles } from "../styles";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,6 +10,19 @@ const Modal: React.FC<ModalProps> = ({
   children,
   className = "",
 }) => {
+  useEffect(() => {
+    const handleEscapeKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && isOpen) {
+        onClose();
+      }
+    };
+
+    document.addEventListener("keydown", handleEscapeKey);
+    return () => {
+      document.removeEventListener("keydown", handleEscapeKey);
+    };
+  }, [isOpen, onClose]);
+
   return (
     <AnimatePresence>
       {isOpen && (

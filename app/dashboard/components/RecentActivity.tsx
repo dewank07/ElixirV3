@@ -1,4 +1,3 @@
-import React from "react";
 import { ActivityItem } from "../types";
 import { baseCardStyles } from "../styles";
 

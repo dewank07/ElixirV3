@@ -1,5 +1,3 @@
-"use client";
-import React from "react";
 import StatsCards from "./components/StatsCards";
 import WelcomeCard from "./components/WelcomeCard";
 import RecentActivity from "./components/RecentActivity";

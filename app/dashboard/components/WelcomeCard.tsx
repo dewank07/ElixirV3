@@ -1,5 +1,3 @@
-import React from "react";
-
 const WelcomeCard = ({ name }: { name: string }) => {
   return (
     <>
