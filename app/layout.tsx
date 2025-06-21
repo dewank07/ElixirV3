@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import "./globals.css";
+import ClientAppLayout from "@/layouts/ClientAppLayout";
 import { ThemeProvider } from "./provider";
 import { Toaster } from "@/components/ui/toaster";
-import dynamic from "next/dynamic";
 
-const ServerWrapperLayout = dynamic(
-  () => import("@/layouts/WrapperLayout/Server/ServerWrapperLayout"),
-  {
-    ssr: true,
-  }
-);
-
-const dmSans = DM_Sans({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -31,24 +24,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/public/jsm-logo.webp" sizes="any" />
-        <meta property="og:title" content="Elixir Tech Community" />
+        <link rel='icon' href='/jsm-logo.png' sizes='any' />
+        <meta property='og:title' content='Elixir Tech Community' />
         <meta
-          property="og:description"
-          content="Elixir fosters a collaborative tech community dedicated to comprehensive learning, offering a supportive environment for growth and innovation."
+          property='og:description'
+          content='Elixir fosters a collaborative tech community dedicated to comprehensive learning, offering a supportive environment for growth and innovation.'
         />
-        <meta property="og:image" content="/public/HomeScreen.webp" />
+        <meta property='og:image' content='/HomeScreen.png' />
       </head>
-      <body className={dmSans.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          disableTransitionOnChange
-        >
+      <body className={inter.className}>
+        <ThemeProvider attribute='class' defaultTheme='dark' enableSystem disableTransitionOnChange>
           <Toaster />
-          <ServerWrapperLayout>{children}</ServerWrapperLayout>
+          <ClientAppLayout>{children}</ClientAppLayout>
         </ThemeProvider>
       </body>
     </html>
