@@ -10,6 +10,5 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "editor.wordWrap": "on",
-  "postman.settings.dotenv-detection-notification-visibility": false
+  "editor.wordWrap": "on"
 }

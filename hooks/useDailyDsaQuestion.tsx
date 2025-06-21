@@ -10,6 +10,7 @@ const useDailyDsaQuestion = async () => {
       const response = await axios.post(url, { data: {} });
       return response.data.results;
     } catch (error) {
+      // Handle error, e.g., log it or show an error message
       console.error("Error fetching problem list:", error);
       throw error;
     }
